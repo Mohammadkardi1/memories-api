@@ -29,6 +29,12 @@ app.use('/api/auth', userRoutes)
 
 
 
+app.get('/',(req,res)=>{
+    res.status(200).json({
+      message:'hello vercel'
+    })
+  })
+
 // Credentials 
 const CONNECTION_URL = process.env.MONGO
 const PORT = process.env.PORT || 5000;
